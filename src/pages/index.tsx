@@ -1,4 +1,5 @@
 import Button from "@/components/atoms/button";
+import Head from "next/head";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -36,6 +37,11 @@ const Home = () => {
 
   return (
     <>
+      {/* CHANGE TITLE */}
+      <Head>
+        <title>Quick Quizzer</title>
+      </Head>
+
       <div className="flex justify-center items-center h-screen bg-gray-100">
         <div className="w-full max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4 mx-2 text-center">
